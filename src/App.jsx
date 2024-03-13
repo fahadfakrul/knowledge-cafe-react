@@ -1,8 +1,7 @@
-import { useEffect } from 'react';
 import './App.css'
 import Blogs from './components/Blogs/Blogs'
+import Bookmarks from './components/Bookmarks/Bookmarks'
 import Header from './components/Header/Header'
-import { useState } from 'react';
 
 function App() {
  
@@ -10,8 +9,11 @@ function App() {
   return (
     <>
      
-      <Header></Header>
-      <Blogs></Blogs>
+      <Header ></Header>
+      <div className='md:flex max-w-7xl mx-auto'>
+        <Blogs ></Blogs>
+        <Bookmarks ></Bookmarks>
+      </div>
     
     </>
   )
